@@ -1,16 +1,19 @@
 <template>
-  <main class="my-7">
-    <div class="w-full container p-7 mx-auto">
-      <div class="">
-        <h2 class="text-5xl">< Sobre mi __</h2>
+  <main class="pt-16 my-7" id="sobre-mi">
+    <div class="container w-full mx-auto p-7">
+      <div class="group">
+        <h2 class="text-5xl">
+          < Sobre mi
+          <span class="transition-all group-hover:text-rose-600">__</span>
+        </h2>
       </div>
       <!--SobreMi-->
       <div class="my-[80px] flex flex-col lg:flex-row gap-7">
-        <p class="text-xl leading-9 tracking-wider lg:w-8/12">
+        <p class="text-xl leading-9 tracking-wider text-gray-700 lg:w-8/12">
           ¡Hola Mundo! Me interesa desarrollarme en el campo laboral tech y
           estoy abierta a desempeñarme en distintos ámbitos que potencien mis
           capacidades.
-          <span class="text-rose-400 font-bold"
+          <span class="font-bold text-rose-400"
             >Me considero una persona responsable y ordenada, orientada al logro
             y capaz de trabajar en función de los objetivos y metas planteados
             en mi equipo de trabajo.</span
@@ -27,7 +30,7 @@
 
         <img
           src="../assets/imgperson.png"
-          class="lg:w-5/12 rounded-e-3xl shadow-lg"
+          class="shadow-lg lg:w-5/12 rounded-e-3xl"
           alt=""
         />
       </div>

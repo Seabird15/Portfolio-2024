@@ -1,9 +1,9 @@
 <script setup>
 import "remixicon/fonts/remixicon.css";
 
-import Hero from "./components/Hero.vue";
-import AboutMe from "./components/AboutMe.vue";
-import Experiencia from "./components/Experiencia.vue";
+import Hero from "./secciones/Hero.vue";
+import AboutMe from "./secciones/AboutMe.vue";
+import Experiencia from "./secciones/Experiencia.vue";
 </script>
 
 <template>
@@ -20,5 +20,6 @@ import Experiencia from "./components/Experiencia.vue";
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 </style>

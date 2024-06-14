@@ -1,13 +1,13 @@
 <template>
-  <section class="w-full">
+  <section class="w-full pt-16" id="experiencia">
     <div
-      class="bg-gradient-to-b from-rose-400/20 via-rose-100 to-transparent mx-7 my-7 h-screen rounded-t-3xl"
+      class="h-screen bg-gradient-to-b from-rose-400/20 via-rose-100 to-transparent my-7 rounded-t-3xl"
     >
-      <div class="p-7 text-right">
+      <div class="text-right p-7">
         <h2 class="text-5xl">Experiencia___ /></h2>
       </div>
       <div class="mx-auto">
-        <div class="px-7 flex gap-2">
+        <div class="flex gap-2 px-7">
           <div class="w-3/6 my-auto">
             <img
               src="../assets/2brainslat_logo.jpeg"
@@ -19,11 +19,11 @@
             <p class="text-3xl">
               Front End Developer <i class="ri-code-s-slash-line"></i>
             </p>
-            <p class="text-2xl text-gray-500 my-4">
+            <p class="my-4 text-2xl text-gray-500">
               abr. 2023 - actualidad · 1 año 3 mesesabr. 2023 - actualidad · 1
               año 3 meses En remoto
             </p>
-            <p class="text-xl my-2">
+            <p class="my-2 text-xl">
               Equipo de Métricas y Desarrollo - Front End Developer
               Especializado en Vue.js y Tailwind CSS utilizando Modyo 8 y Modyo
               9:
@@ -47,11 +47,11 @@
         </div>
       </div>
       <div class="mx-auto my-[100px]">
-        <div class="px-7 flex gap-2 relative">
-          <div class="w-4/6 my-auto order-2">
+        <div class="relative flex gap-2 px-7">
+          <div class="order-2 w-4/6 my-auto">
             <img
               src="../assets/bbk2brains_logo.jpeg"
-              class="rounded-md mx-auto"
+              class="mx-auto rounded-md"
               alt=""
             />
           </div>
@@ -59,12 +59,12 @@
             <p class="text-3xl">
               <i class="ri-code-s-slash-line"></i> Front End QA Trainee
             </p>
-            <p class="text-2xl text-gray-500 my-4">
+            <p class="my-4 text-2xl text-gray-500">
               BBK+2Brains · Contrato de formaciónBBK+2Brains · Contrato de
               formación ene. 2023 - abr. 2023 · 4 mesesene. 2023 - abr. 2023 · 4
               meses En remoto
             </p>
-            <p class="text-xl my-2">QA Trainee para Caja Los Andes</p>
+            <p class="my-2 text-xl">QA Trainee para Caja Los Andes</p>
             <p class="text-xl tracking-wider">
               Como Front End QA Trainee, mis principales responsabilidades
               incluyen la realización de pruebas exhaustivas en builds de
@@ -77,6 +77,10 @@
           </div>
         </div>
       </div>
+      <Certificaciones />
     </div>
   </section>
 </template>
+<script setup>
+import Certificaciones from "./components/Certificaciones.vue";
+</script>
