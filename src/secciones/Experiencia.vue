@@ -1,14 +1,14 @@
 <template>
   <section class="w-full pt-16" id="experiencia">
     <div
-      class="h-screen bg-gradient-to-b from-rose-400/20 via-rose-100 to-transparent my-7 rounded-t-3xl"
+      class="container mx-auto bg-gradient-to-b from-rose-400/20 via-rose-100 to-transparent my-7 rounded-t-3xl"
     >
       <div class="text-right p-7">
         <h2 class="text-5xl">Experiencia___ /></h2>
       </div>
       <div class="mx-auto">
-        <div class="flex gap-2 px-7">
-          <div class="w-3/6 my-auto">
+        <div class="flex flex-col gap-2 lg:flex-row px-7">
+          <div class="my-auto lg:w-3/6">
             <img
               src="../assets/2brainslat_logo.jpeg"
               class="rounded-md"
@@ -47,11 +47,11 @@
         </div>
       </div>
       <div class="mx-auto my-[100px]">
-        <div class="relative flex gap-2 px-7">
-          <div class="order-2 w-4/6 my-auto">
+        <div class="relative flex flex-col gap-2 lg:flex-row px-7">
+          <div class="my-auto lg:order-2 lg:w-4/6">
             <img
               src="../assets/bbk2brains_logo.jpeg"
-              class="mx-auto rounded-md"
+              class="rounded-md lg:mx-auto"
               alt=""
             />
           </div>

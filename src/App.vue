@@ -4,6 +4,7 @@ import "remixicon/fonts/remixicon.css";
 import Hero from "./secciones/Hero.vue";
 import AboutMe from "./secciones/AboutMe.vue";
 import Experiencia from "./secciones/Experiencia.vue";
+import Footer from "./secciones/Footer.vue";
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import Experiencia from "./secciones/Experiencia.vue";
   <AboutMe />
   <hr class="h-1 mx-4 bg-gray-300 rounded-full" />
   <Experiencia />
+  <Footer />
 </template>
 
 <style>

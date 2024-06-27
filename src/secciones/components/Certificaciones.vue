@@ -1,11 +1,11 @@
 <template>
   <section
-    class="h-screen bg-gradient-to-b p-7 from-rose-400/20 via-rose-100 to-transparent my-7 rounded-t-3xl"
+    class="bg-gradient-to-b p-7 from-rose-400/20 via-rose-100 to-transparent my-7 rounded-t-3xl"
   >
     <div>
       <h2 class="text-5xl"><__/Certificaciones</h2>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       <div
         class="container p-7 hover:scale-[1.02] transition-all"
         v-for="(i, index) in certis"
@@ -39,7 +39,7 @@ const certis = [
     descripcion:
       "Bootcamp destinado a mujeres interesadas en desarrollar una carrera den Desarrollo Web Front End. Duración de 6 meses, con un enfoque en HTML, CSS, JavaScript, React y Node.js.",
     url: "https://www.credential.net/c3374281-8955-4ba3-8c28-26b61f4cdb31",
-    imagen: "https://i.ibb.co/ZX76Twq/Labo-Front.jpg",
+    imagen: "https://i.ibb.co/2W4MNzv/1674237619937.jpg",
     fecha: "2021",
   },
   {
@@ -48,14 +48,15 @@ const certis = [
       "Curso de Desarrollo Web orientado a Front End con enfoque en las bases de HTML, CSS y JavaScript y su aplicación en proyectos reales.",
     url: "https://ibb.co/QrFqmVR",
     imagen: "https://i.ibb.co/zGhLfgY/6297525145d80e0019d1d928.png",
-    fecha: "Abril 2022",
+    fecha: " 2022",
   },
   {
     titulo: "Certificado Tailwind CSS - Udemy",
     descripcion:
       "Curso de Tailwind CSS desde cero, con enfoque en la creación de proyectos reales y la implementación de componentes personalizados",
     url: "https://www.udemy.com/certificate/UC-24e0afbe-29ec-4050-a546-3882a65e664b/",
-    imagen: "https://i.ibb.co/4ZRcwcY/certiudemy1.jpg",
+    imagen:
+      "https://i.ibb.co/Rz4kWNm/UC-24e0afbe-29ec-4050-a546-3882a65e664b.jpg",
     fecha: "2022",
   },
   {
@@ -66,6 +67,15 @@ const certis = [
     imagen:
       "https://i.ibb.co/YTQtV8M/Captura-de-pantalla-2024-06-14-a-la-s-5-24-59-p-m.png",
     fecha: "2022",
+  },
+  {
+    titulo: "Vue JS 3 - Udemy",
+    descripcion:
+      "Curso de Vue JS 3 desde cero, con enfoque en la creación de proyectos reales y la implementación de componentes personalizados",
+    url: "https://www.udemy.com/certificate/UC-b41df0ee-1f45-4414-a6de-c58938669d09/",
+    imagen:
+      "https://i.ibb.co/rmWKmK3/UC-b41df0ee-1f45-4414-a6de-c58938669d09.jpg",
+    fecha: "2024",
   },
 ];
 </script>

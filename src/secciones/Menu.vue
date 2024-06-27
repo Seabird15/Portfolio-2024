@@ -10,14 +10,18 @@
         <RRSS />
       </div>
       <div class="flex justify-between my-auto gap-7 text-rose-500">
-        <a href="#proyectos" class="transition-all hover:text-white"
+        <a href="#proyectos" class="transition-all hover:text-rose-200"
           >Proyectos</a
         >
-        <a href="#experiencia" class="transition-all hover:text-white"
+        <a href="#experiencia" class="transition-all hover:text-rose-200"
           >Experiencia</a
         >
-        <a href="#sobre-mi" class="transition-all hover:text-white">Sobre Mi</a>
-        <a href="#contacto" class="transition-all hover:text-white">Contacto</a>
+        <a href="#sobre-mi" class="transition-all hover:text-rose-200"
+          >Sobre Mi</a
+        >
+        <a href="#contacto" class="transition-all hover:text-rose-200"
+          >Contacto</a
+        >
       </div>
     </nav>
 

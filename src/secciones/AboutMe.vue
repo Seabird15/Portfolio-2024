@@ -34,6 +34,14 @@
           alt=""
         />
       </div>
+      <div>
+        <a
+          target="_blank"
+          href="https://drive.google.com/file/d/1iwtnAlZ5eKGfngd2QJ8xQ0uPwBpCXtX-/view"
+          class="text-2xl transition-all cursor-pointer hover:underline hover:text-rose-500"
+          >Descargar CV <i class="ri-article-fill text-rose-500"></i
+        ></a>
+      </div>
       <!--Skills-->
       <div class="my-[100px]">
         <Skills />
