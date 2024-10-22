@@ -1,32 +1,13 @@
 <template>
   <div class="w-full">
-    <div class="container hidden lg:block">
+    <div class="container">
       <h2 class="text-5xl">Skills <i class="ri-braces-fill"></i></h2>
-      <div class="grid grid-cols-4 text-center">
-        <div
-          class="my-5"
-          v-for="(habilities, index) in habilities"
-          :key="index"
-        >
-          <span
-            class="p-2 px-5 text-2xl text-gray-600 transition-all rounded-full shadow hover:bg-gradient-to-r from-rose-600 hover:border-white to-rose-500 hover:text-white hover:shadow-lg"
-            >{{ habilities }}
-          </span>
-        </div>
-      </div>
-      <div
-        class="container flex justify-center mx-auto text-5xl p-7 my-7 md:justify-evenly md:text-6xl"
-      >
-        <i class="text-yellow-400 ri-html5-line"></i>
-        <i class="text-green-700 ri-vuejs-fill"></i>
-        <i class="text-blue-400 ri-reactjs-line"></i>
-        <i class="text-blue-500 ri-tailwind-css-fill"></i>
-        <i class="text-blue-800 ri-css3-fill"></i>
-      </div>
+
+      <Galeria />
     </div>
 
     <!--Slider Mobile-->
-    <div>
+    <!-- <div>
       <div class="overflow-hidden whitespace-nowrap">
         <div class="inline-block text-6xl text-rose-500 animate-scroll">
           <span v-for="(text, index) in skills" :key="index" class="mr-4">
@@ -34,12 +15,14 @@
           </span>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--Slider Mobile-->
   </div>
 </template>
 
 <script setup>
+import Galeria from "./components/Galeria.vue";
+
 const habilities = [
   "Trabajo en equipo",
   "Comunicación",

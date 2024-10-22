@@ -22,9 +22,9 @@
           <p class="my-4 text-center">{{ i.fecha }}</p>
           <a
             :href="i.url"
-            class="flex justify-center py-4 mx-auto tracking-widest text-center text-white border-2 rounded-full shadow w-fit px-7 bg-rose-300"
+            class="flex justify-center w-full py-4 mb-auto tracking-widest text-center text-white transition-all duration-300 border-2 rounded-full shadow hover:border-solid hover:border-2 hover:border-rose-500 hover:text-rose-500 hover:bg-rose-200 px-7 bg-rose-500"
           >
-            ver más
+            ir a certificación
           </a>
         </div>
       </div>
