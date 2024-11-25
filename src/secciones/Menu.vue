@@ -28,7 +28,7 @@
     <!-- Menú hamburguesa para dispositivos móviles -->
     <div
       :class="{ 'bg-white': isMenuBackgroundWhite }"
-      class="flex gap-4 p-2 md:hidden"
+      class="flex gap-4 p-2 shadow-xl md:hidden"
     >
       <button
         @click="isOpen = !isOpen"
@@ -41,7 +41,7 @@
       </div>
       <div
         v-if="isOpen"
-        class="fixed inset-0 flex w-2/4 bg-white bg-opacity-95"
+        class="fixed inset-0 flex w-full bg-white bg-opacity-95"
       >
         <!-- Contenido del menú desplegable -->
         <div class="flex flex-col w-full p-4 text-rose-500">
@@ -49,10 +49,38 @@
             <i class="flex justify-end text-black ri-close-large-line"></i>
           </button>
 
-          <a href="#proyectos" class="px-2 py-2 mt-2 shadow">Proyectos</a>
-          <a href="#experiencia" class="px-2 py-2 mt-2 shadow">Experiencia</a>
-          <a href="#sobre-mi" class="px-2 py-2 mt-2 shadow">Sobre Mi</a>
-          <a href="#contacto" class="px-2 py-2 mt-2 shadow">Contacto</a>
+          <a
+            @click="close()"
+            href="#proyectos"
+            class="flex gap-4 px-2 py-2 mt-2 text-2xl shadow"
+          >
+            <i class="ri-file-text-line"></i>
+            <p>Proyectos</p></a
+          >
+          <a
+            @click="close()"
+            href="#experiencia"
+            class="flex gap-4 px-2 py-2 mt-2 text-2xl shadow"
+          >
+            <i class="ri-code-s-slash-fill"></i>
+            <p>Experiencia</p>
+          </a>
+          <a
+            @click="close()"
+            href="#sobre-mi"
+            class="flex gap-4 px-2 py-2 mt-2 text-2xl shadow"
+          >
+            <i class="ri-user-follow-line"></i>
+            <p>Sobre mi</p>
+          </a>
+          <a
+            @click="close()"
+            href="#contacto"
+            class="flex gap-4 px-2 py-2 mt-2 text-2xl shadow"
+          >
+            <i class="ri-mail-line"></i>
+            <p>Contacto</p>
+          </a>
         </div>
       </div>
     </div>

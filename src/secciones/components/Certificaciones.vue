@@ -12,7 +12,12 @@
         :key="index"
       >
         <div class="p-4 bg-white rounded-md shadow-lg bg-opacity-20 h-[550px]">
-          <img :src="i.imagen" alt="image" class="w-auto mx-auto max-h-44" />
+          <img
+            :ref="(el) => (images[index] = el)"
+            :src="i.imagen"
+            alt="image"
+            class="w-auto mx-auto transition-opacity duration-700 ease-in-out transform opacity-0 max-h-44"
+          />
           <h3 class="my-4 text-2xl tracking-wider text-center">
             {{ i.titulo }}
           </h3>
@@ -33,6 +38,20 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from "vue";
+
+import { useFadeInObserver } from "@/composables/useFadeInObserver";
+
+const images = ref([]);
+
+const { observeElement } = useFadeInObserver();
+
+onMounted(() => {
+  images.value.forEach((image) => {
+    if (image) observeElement(image);
+  });
+});
+
 const certis = [
   {
     titulo: "Bootcamp Front End Laboratoria",
@@ -75,6 +94,15 @@ const certis = [
     url: "https://www.udemy.com/certificate/UC-b41df0ee-1f45-4414-a6de-c58938669d09/",
     imagen:
       "https://i.ibb.co/rmWKmK3/UC-b41df0ee-1f45-4414-a6de-c58938669d09.jpg",
+    fecha: "2024",
+  },
+  {
+    titulo: "React Native CLI - UDEMY",
+    descripcion:
+      "Curso de React Native CLI desde cero, con enfoque en la creación de proyectos reales y la implementación de componentes personalizados",
+    url: "https://www.udemy.com/certificate/UC-e587ea64-202c-4be1-90a6-8b9142535510/",
+    imagen:
+      "https://udemy-certificate.s3.amazonaws.com/image/UC-e587ea64-202c-4be1-90a6-8b9142535510.jpg?v=1725323391000",
     fecha: "2024",
   },
 ];

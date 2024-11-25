@@ -30,15 +30,16 @@
 
         <img
           src="../assets/imgperson.png"
-          class="shadow-lg lg:w-5/12 rounded-e-3xl"
+          class="transition-opacity duration-700 ease-in-out transform shadow-lg opacity-0 lg:w-5/12 rounded-e-3xl"
           alt=""
+          ref="image1"
         />
       </div>
       <div>
         <a
           target="_blank"
           href="https://drive.google.com/file/d/1iwtnAlZ5eKGfngd2QJ8xQ0uPwBpCXtX-/view"
-          class="text-2xl transition-all cursor-pointer hover:underline hover:text-rose-500"
+          class="text-4xl transition-all cursor-pointer hover:underline hover:text-rose-500"
           >Descargar CV <i class="ri-article-fill text-rose-500"></i
         ></a>
       </div>
@@ -53,4 +54,15 @@
 
 <script setup>
 import Skills from "./Skills.vue";
+
+import { useFadeInObserver } from "@/composables/useFadeInObserver";
+import { onMounted, ref } from "vue";
+
+const image1 = ref(null);
+
+const { observeElement } = useFadeInObserver();
+
+onMounted(() => {
+  if (image1.value) observeElement(image1.value);
+});
 </script>

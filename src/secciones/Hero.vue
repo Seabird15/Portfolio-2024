@@ -15,7 +15,7 @@
         <p
           class="p-2 transition-all rounded-sm my-7 drop-shadow-2xl hover:text-rose-400 hover:bg-white/10"
         >
-          TAILWIND CSS - GIT - MODYO - REACT
+          TAILWIND CSS - GIT - MODYO - REACT - VUE
         </p>
       </div>
     </div>

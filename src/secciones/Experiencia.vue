@@ -13,6 +13,7 @@
               src="../assets/2brainslat_logo.jpeg"
               class="rounded-md"
               alt=""
+              ref="image1"
             />
           </div>
           <div class="my-auto">
@@ -20,8 +21,7 @@
               Front End Developer <i class="ri-code-s-slash-line"></i>
             </p>
             <p class="my-4 text-2xl text-gray-500">
-              abr. 2023 - actualidad · 1 año 3 mesesabr. 2023 - actualidad · 1
-              año 3 meses En remoto
+              abr. 2023 - actualidad · 1 año 7 meses. En remoto
             </p>
             <p class="my-2 text-xl">
               Equipo de Métricas y Desarrollo - Front End Developer
@@ -51,8 +51,9 @@
           <div class="my-auto lg:order-2 lg:w-4/6">
             <img
               src="../assets/bbk2brains_logo.jpeg"
-              class="rounded-md lg:mx-auto"
+              class="transition-opacity duration-700 ease-in-out transform rounded-md opacity-0 lg:mx-auto"
               alt=""
+              ref="image2"
             />
           </div>
           <div class="my-auto">
@@ -61,8 +62,7 @@
             </p>
             <p class="my-4 text-2xl text-gray-500">
               BBK+2Brains · Contrato de formaciónBBK+2Brains · Contrato de
-              formación ene. 2023 - abr. 2023 · 4 mesesene. 2023 - abr. 2023 · 4
-              meses En remoto
+              formación ene. 2023 - abr. 2023 · 4 meses. En remoto
             </p>
             <p class="my-2 text-xl">QA Trainee para Caja Los Andes</p>
             <p class="text-xl tracking-wider">
@@ -83,4 +83,17 @@
 </template>
 <script setup>
 import Certificaciones from "./components/Certificaciones.vue";
+
+import { useFadeInObserver } from "@/composables/useFadeInObserver";
+import { onMounted, ref } from "vue";
+
+const image1 = ref(null);
+const image2 = ref(null);
+
+const { observeElement } = useFadeInObserver();
+
+onMounted(() => {
+  if (image1.value) observeElement(image1.value);
+  if (image2.value) observeElement(image2.value);
+});
 </script>
